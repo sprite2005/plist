@@ -69,6 +69,7 @@ module Plist
         @xml = plist_data_or_file
       end
 
+      @xml = @xml.force_encoding("UTF-8")
       @listener = listener
     end
 
